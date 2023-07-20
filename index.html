@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form method="post">
+      <h1>Student's Sign up Form</h1>
+      <!--Student's First Name  -->
+      <div>
+        <label for="fname">First name:</label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="First Name"
+          class="input"
+          required
+        />
+      </div>
+      <!--  studeent's Last Name -->
+      <div>
+        <label for="lname">Last name:</label>
+        <input
+          type="text"
+          class="input"
+          id="lname"
+          name="lname"
+          placeholder="Last Name"
+        />
+      </div>
+
+      <!-- Student's User name -->
+      <div>
+        <label for="uname">User name:</label>
+        <input
+          type="text"
+          class="input"
+          id="uname"
+          name="uname"
+          placeholder="User Name"
+        />
+      </div>
+
+      <!-- Student's email -->
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="input"
+          placeholder="Enter Your email"
+        />
+      </div>
+
+      <!-- Phone Number of student -->
+      <div>
+        <label for="tel">Phone Number:</label>
+        <input
+          type="tel"
+          class="input"
+          name="tel"
+          id="tel"
+          placeholder="+234-0000000000"
+          re
+        />
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label for="pw">Password:</label>
+        <input
+          type="password"
+          class="input"
+          name="pw"
+          id="pw"
+          placeholder="Enter password"
+        />
+      </div>
+
+      <div>
+        <label for="pw">Confirm Password:</label>
+        <input
+          type="password"
+          name="pw"
+          class="input"
+          id="cpw"
+          placeholder="Confirm password"
+        />
+      </div>
+      <!-- Sex -->
+      <div class="radio">
+        <label for="gender"> Gender:</label>
+        <input type="radio" name="gender" id="male" /> male
+        <input type="radio" name="gender" id="female" /> female
+        <input type="radio" name="gender" id="others" /> others
+      </div>
+
+      <!-- Date of birth -->
+      <div>
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" class="input" name="dob" id="dob" />
+      </div>
+
+      <!-- Student's blood group -->
+      <div>
+        <label for="bg">Blood Group:</label>
+        <select class="input" name="bg" id="bg" size="1">
+          <option value="1">O RhD positive</option>
+          <option value="2">O RhD negative</option>
+          <option value="3">A RhD positive</option>
+          <option value="4">A RhD negative</option>
+          <option value="5">B RhD positive</option>
+          <option value="6">B RhD negative</option>
+          <option value="7">AB RhD positive</option>
+          <option value="8">AB RhD negative</option>
+        </select>
+      </div>
+
+      <!-- Department -->
+      <div class="radio">
+        <label for="dept">Department:</label>
+        <input type="radio" name="dept" id="cse" /> CSE
+        <input type="radio" name="dept" id="eee" /> EEE
+        <input type="radio" name="dept" id="bba" /> BBA
+      </div>
+
+      <!-- Course of study -->
+      <div class="check">
+        <label for="course">Course:</label>
+        <input type="checkbox" name="course" id="c" /> C
+        <input type="checkbox" name="course" id="cc" /> C++
+        <input type="checkbox" name="course" id="java" /> Java
+        <input type="checkbox" name="course" id="ai" /> AI
+        <input type="checkbox" name="course" id="mac_lang" /> Machine learning
+        <input type="checkbox" name="course" id="robot" /> Robotics
+      </div>
+
+      <!-- Photo -->
+      <div>
+        <label for="photo">Photo:</label>
+        <input class="input" type="file" name="photo" id="photo" />
+      </div>
+
+      <!-- Students expectations -->
+      <div>
+        <label for="you">Expectation:</label>
+        <textarea
+          name="you"
+          id=""
+          class="input"
+          cols="30"
+          rows="2"
+          placeholder="Tell us how you intend to achieve your goals in a sentence "
+        ></textarea>
+      </div>
+
+      <div class="bt_con">
+        <input class="btn" type="submit" value="Submit" />
+        <input class="btn" type="reset" value="Reset" />
+      </div>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
